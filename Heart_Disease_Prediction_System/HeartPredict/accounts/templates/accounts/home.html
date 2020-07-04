@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head%}
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+<link href="{% static 'css/now-ui-kit.css' %}" rel="stylesheet" />
+<link href="{% static 'css/style4.css' %}" rel="stylesheet">
+
+<title>Home</title>
+
+{% endblock %}
+
+
+{% block body%}
+<!--Carousel Wrapper-->
+<div class="container-fluid">
+<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <!--First slide-->
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/static/images/giphy.gif"  width="1200" height="450"
+        alt="First slide">
+    </div>
+<!--/.Carousel Wrapper-->
+  </div>
+</div>
+</div>
+<br>
+
+<div style="text-align: center;">
+
+<h2> IT IS HEALTH THAT IS REAL WEALTH AND NOT PIECES OF GOLD AND SILVER.</h2>
+</div>
+<div class="container">
+
+  <div class="card-deck">
+  <div class="card">
+    <img src="static/images/heart17.jpg" class="card-img-top" alt="..." height="232">
+    <div class="card-body">
+      <p class="card-text">Coronary heart disease is one of the most prevalent causes of death among men and women.
+      Silent heart disease is difficult to diagonize because it doesn't have prominent symptoms like heart attack
+      heart failure.One of the most common coronary heart disease is Angina Pectoris.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="static/images/image7.jpg" class="card-img-top" alt="..."  height="232">
+    <div class="card-body">
+      <p class="card-text">A healthy diet and lifestyle are your best weapons to fight cardiovascular disease.
+        It’s not as hard as you may think!  Remember, it's the overall pattern of your choices that counts. Make the
+        simple steps below part of your life for long-term benefits to your health and your heart.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="static/images/image4.jpg" class="card-img-top" alt="..." height="232">
+    <div class="card-body">
+      <p class="card-text"> The first thing you may think of is heart attack. Certainly chest pain is not something to ignore.
+        But you should know that it has many possible causes. In fact, as much as a quarter of the U.S. population experiences
+        chest pain that is not related to the heart. Chest pain may also be caused by problems in your lungs, esophagus, muscles, ribs, or nerves.</p>
+    </div>
+  </div>
+</div>
+
+
+  <br><br>
+
+  <div class="card-group">
+  <div class="card">
+    <img src="static/images/heart16.webp" class="card-img-top" alt="..." height="420">
+
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Heart Disease</h5>
+      <p class="card-text">The heart is like any other muscle in the body.It needs an adequate blood supply to provide
+      oxygen so that the muscle can contract and pump blood to rest of the body.
+        Not only does the heart pump blood to the rest of the body, it also pumps blood to itself via the coronary arteries.</p>
+      <p>The muscle that pumps blood received from veins into arteries throughout the body.
+        It is positioned in chest behind the sternum . The normal heart is about the size of closed fist,
+        and weighs about 10.5 ounces.</p><p> It is cone shaped,with the point of the cone pointing down to the left.
+      Two-thirds of the heart lies in the left side of the chest with the balance in the right side.</p>
+    </div>
+  </div>
+  </div>
+</div>
+<br>
+{% endblock %}
+

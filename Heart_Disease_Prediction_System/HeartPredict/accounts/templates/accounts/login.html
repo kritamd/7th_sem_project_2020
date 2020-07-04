@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet" />
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+<link href="{% static 'css/now-ui-kit.css' %}" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+<title>Login</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="container-fluid">
+
+	 <div class="section section-signup" style="background-image: url('{% static 'images/image1.jpg' %}'); background-size: cover; background-position: top center; min-height: 700px;">
+
+<div class="header-main">
+ <h2>Login Now</h2>
+			<div class="header-bottom">
+				<div class="header-right w3agile">
+					<div class="header-left-bottom agileinfo">
+            <form  action=" {% url 'user_login' %}" method="post">
+             {% csrf_token %}
+							<div class="icon1">
+								<input type="text" name="username" placeholder="Username"  >
+							</div>
+							<div class="icon1">
+								<input type="password"  name="password" placeholder="Password"/>
+							</div>
+							<div class="bottom">
+								<input type="submit" value="Log in">
+							</div>
+					</form>
+					</div>
+				</div>
+
+			</div>
+</div>
+	 </div>
+</div><br>
+{% endblock %}
